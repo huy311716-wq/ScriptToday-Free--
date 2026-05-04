@@ -147,7 +147,7 @@
 
         .script-code-area {
             background: #000;
-            color: #00ff41; /* Màu xanh hacker */
+            color: #00ff41; 
             padding: 12px;
             border-radius: 6px;
             font-family: 'Courier New', Courier, monospace;
@@ -178,7 +178,6 @@
             font-style: italic;
         }
 
-        /* Thanh cuộn cho bảng */
         .modal-content::-webkit-scrollbar { width: 6px; }
         .modal-content::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
     </style>
@@ -188,10 +187,10 @@
     <!-- Giao diện chính -->
     <div class="main-container">
         <div class="logo-circle">ST</div>
-        <h1>Script Tổng Hợp</h1>
-        <p>Chào mừng bạn đến với kho lưu trữ của Sơn Trần Hub. <br>Bấm nút bên dưới để xem danh sách Script.</p>
+        <h1>Script Today</h1>
+        <p>Chào mừng bạn đến với kho lưu trữ của Script Today Hub. <br>Bấm nút bên dưới để xem danh sách Script.</p>
         <button class="btn-open" onclick="toggleModal(true)">Lấy Script Ngay</button>
-        <div style="margin-top: 30px; font-size: 12px; color: #555;">&copy; 2026 Sơn Trần Hub</div>
+        <div style="margin-top: 30px; font-size: 12px; color: #555;">&copy; 2026 Script Today Hub</div>
     </div>
 
     <!-- Bảng hiện Script -->
@@ -230,7 +229,7 @@
             <!-- Script 4 -->
             <div class="script-box">
                 <div class="script-header">
-                    <span>4. Volleyball Legends <span class="paid-tag">(Paid 50k)</span></span>
+                    <span>4. Script Today Hub VolleyBall Legends <span class="paid-tag">(Paid 50k)</span></span>
                 </div>
                 <div class="script-code-area" style="color: #ffcc00;">Vui lòng liên hệ Admin để mua Key bản quyền.</div>
                 <button class="copy-button" onclick="alert('Vui lòng nhắn tin cho Admin để mua!')">Liên hệ mua</button>
@@ -240,13 +239,11 @@
     </div>
 
     <script>
-        // Hàm đóng/mở bảng
         function toggleModal(show) {
             const modal = document.getElementById('scriptModal');
             modal.style.display = show ? 'block' : 'none';
         }
 
-        // Hàm copy code
         function copyScript(elementId) {
             const text = document.getElementById(elementId).innerText;
             navigator.clipboard.writeText(text).then(() => {
@@ -256,7 +253,6 @@
             });
         }
 
-        // Đóng bảng khi nhấn ra ngoài vùng bảng
         window.onclick = function(event) {
             const modal = document.getElementById('scriptModal');
             if (event.target == modal) {
