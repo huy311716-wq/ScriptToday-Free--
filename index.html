@@ -1,10 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Trang Web Của Tôi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Today - Free</title>
+    <style>
+        /* Toàn bộ trang web */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Màu nền tối */
+            color: #e0e0e0; /* Màu chữ chính */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Khung chứa web có viền */
+        .container {
+            width: 80%;
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+            background-color: #1e1e1e; /* Màu nền khung */
+            border: 3px solid #00ff88; /* Màu viền xanh neon */
+            border-radius: 20px; /* Bo góc */
+            box-shadow: 0 0 25px rgba(0, 255, 136, 0.4); /* Hiệu ứng phát sáng */
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px); /* Hiệu ứng bay lên khi hover */
+        }
+
+        /* Phần Logo */
+        .logo {
+            font-size: 50px;
+            font-weight: bold;
+            color: #00ff88;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+            margin-bottom: 20px;
+            display: inline-block;
+            border: 2px solid #00ff88;
+            padding: 10px 20px;
+            border-radius: 50%; /* Làm logo hình tròn */
+            background-color: rgba(0, 255, 136, 0.1);
+        }
+
+        /* Tiêu đề Script Tổng Hợp */
+        h1 {
+            color: #ffffff;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+
+        /* Đoạn văn miêu tả */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Nút bấm */
+        .btn {
+            display: inline-block;
+            background-color: #00ff88; /* Màu nền nút */
+            color: #121212; /* Màu chữ nút */
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 255, 136, 0.4);
+        }
+
+        .btn:hover {
+            background-color: #00cc6e; /* Màu khi di chuột qua */
+            box-shadow: 0 6px 20px rgba(0, 255, 136, 0.6);
+            transform: scale(1.05); /* Phóng to nhẹ khi hover */
+        }
+
+        /* Phần chân trang */
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <h1>Chào mừng đến với website của mình!</h1>
-    <p>Đây là trang web đầu tiên được lưu trữ trên GitHub.</p>
+    <div class="container">
+        <!-- Phần Logo (Bạn có thể thay chữ ST bằng hình ảnh nếu muốn) -->
+        <div class="logo">ST</div>
+        
+        <!-- Tiêu đề chính -->
+        <h1>Script Tổng Hợp</h1>
+        
+        <!-- Nội dung miêu tả -->
+        <p>Chào mừng bạn đến với kho lưu trữ script miễn phí và chất lượng nhất của Sơn Trần Hub. Tại đây bạn sẽ tìm thấy những bản script mới nhất, được cập nhật thường xuyên.</p>
+        
+        <!-- Nút hành động -->
+        <a href="https://github.com/huy311716-wq/ScriptToday-Free--/tree/main" class="btn">Lấy Script Ngay</a>
+        
+        <!-- Phần chân trang -->
+        <div class="footer">
+            &copy; 2024 Sơn Trần Hub. All rights reserved.
+        </div>
+    </div>
 </body>
 </html>
